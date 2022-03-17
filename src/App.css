@@ -1,38 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Architects Daughter" !important;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  padding: 1rem;
+  min-width: 100vh;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("Components/Assets/cork_wall_background.jpg");
+  background-repeat: repeat;
+  border: 2rem solid black;
+  border-image: url('Components/Assets/wood_frame.png') 15% 10% round;
+}
+
+
+h1 {
   color: white;
+  text-align: center;
+  margin-top: 0;
+  text-shadow: rgb(255, 38, 0) 1px 0 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 span {
+  display: block;
+  color: darken(white, 20%);
+  font-size: 14px;
+  font-style: italic;
+  height: 14px;
 }

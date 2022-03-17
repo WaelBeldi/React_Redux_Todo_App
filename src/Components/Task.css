@@ -1,0 +1,67 @@
+.task {
+  cursor: pointer;
+  background-image: url("Assets/post_it.png");
+  background-size: cover;
+  height: 175px;
+  width: 175px;
+  padding: 20px;
+  position: relative;
+  /* box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5) */
+}
+
+.pin {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -8%;
+  left: 40%;
+}
+
+.task-text {
+  position: relative;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Architects Daughter";
+  height: 70%;
+  width: 100%;
+  margin: 0.5rem 0 0;word-break: break-all;
+  white-space: normal;
+}
+
+.task-edit-button {
+  position: absolute;
+  bottom: 5%;
+}
+
+.task.completed {
+  background-image: url("Assets/post_it_done_green.png");
+  background-size: cover;
+  text-decoration: line-through;
+  animation: strike 0.5s linear;
+}
+
+@keyframes strike {
+  from {
+    text-decoration-color: transparent;
+  }
+  to {
+    text-decoration-color: auto;
+  }
+}
+
+.task-edit-form {
+  margin: 0.5rem 0;
+  height: 130px;
+}
+
+.task-text-edit {
+  position: relative;
+}
+
+.task-save-button {
+  background: transparent;
+  border: none;
+  position: absolute;
+  bottom: -10%;
+  left: -7%;
+}

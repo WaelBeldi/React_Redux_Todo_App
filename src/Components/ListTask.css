@@ -1,0 +1,98 @@
+.add-filter-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.task-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1150px;
+  min-width: 195px;
+  margin: 25px auto;
+}
+
+.filter-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.filter-buttons .all,
+.filter-buttons .to-do,
+.filter-buttons .done {
+  color: white;
+  margin: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+  border-radius: 5px;
+}
+
+.filter-buttons .all{
+  background: #e52d2791;
+  border-color: #e52d2791;
+}
+
+.filter-buttons .all:hover {
+  color: black;
+  background: #e52d27;
+  border-color: #e52d27;
+  box-shadow: 0px 0px 18px 0px rgb(255, 0, 0)
+}
+
+.filter-buttons .all.active {
+  color: black;
+  background: #e52d27;
+  border-color: #e52d27;
+  box-shadow: 0px 0px 18px 0px rgb(255, 0, 0)
+}
+
+.filter-buttons .to-do{
+  background: #fff27f91;
+  border-color: #fff27f91;
+}
+
+.filter-buttons .to-do:hover {
+  color: black;
+  background: #fff27f;
+  border-color: #fff27f;
+  box-shadow: 0px 0px 18px 0px rgb(255, 255, 0)
+}
+
+.filter-buttons .to-do.active {
+  color: black;
+  background: #fff27f;
+  border-color: #fff27f;
+  box-shadow: 0px 0px 18px 0px rgb(255, 255, 0)
+}
+
+.filter-buttons .done{
+  background: #88ed81a9;
+  border-color: #88ED81a9;
+}
+
+.filter-buttons .done:hover {
+  color: black;
+  background: #88ED81;
+  border-color: #88ED81;
+  box-shadow: 0px 0px 18px 0px rgb(0, 255, 0)
+}
+
+.filter-buttons .done.active {
+  color: black;
+  background: #88ED81;
+  border-color: #88ED81;
+  box-shadow: 0px 0px 18px 0px rgb(0, 255, 0)
+}
+
+@media screen and (max-width: 769px) {
+  .add-filter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
